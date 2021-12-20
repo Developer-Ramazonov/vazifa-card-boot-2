@@ -1,0 +1,110 @@
+.table>.row>div {
+    box-sizing: border-box;
+    height: 100px;
+    border: 3px solid white;
+    color: white;
+}
+
+
+.card-from-master {
+    background-color: #004147;
+}
+
+
+
+.mycard {
+
+    // mycard
+
+
+    background-color: #022F34;
+    color: #6DAEAD;
+    // transition: all 1s ease-in-out;
+
+    &-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        color: #004147;
+        font-weight: bold;
+        // transition: hover 1s ease-in-out;
+
+        &:hover {
+            background-color: turquoise !important;
+
+        }
+
+        &:hover ~ .mycard-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+
+
+    // mycard active
+
+
+    // &-active {
+    //     // transform: translateY(-120%);
+    //     // opacity: 0;
+    //     // visibility: hidden;
+    // }
+
+
+    // &-active {
+
+    //     // transform: translateY(-100%);
+    //     // opacity: 0;
+    //     // height: 100%;
+    //     color: #6DAEAD;
+    //     background-color: #022F34;
+
+
+    //     .mycard-btn:hover .mycard-active {
+    //         opacity: 1;
+    //         // z-index: 100;
+    //     }
+    // }
+
+    // &:hover {}
+
+}
+
+
+
+
+.mycard-active {
+    background-color: #022F34;
+        opacity: 0;
+        visibility: hidden;
+
+    &-btn {
+
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        color: #004147;
+        font-weight: normal;
+        background-color: aqua!important;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // &:active .mycard-active {
+        //     // transform: translateX(0);
+        //     // opacity: 1;
+        //     // z-index: 100;
+        // }
+
+
+        &:focus {
+
+            & button {
+                display: none;
+            }
+
+        }
+    }
+}

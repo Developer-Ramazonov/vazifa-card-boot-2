@@ -1,1 +1,64 @@
-/* No CSS *//*# sourceMappingURL=main.min.css.map */
+.table > .row > div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100px;
+  border: 3px solid white;
+  color: white;
+}
+
+.card-from-master {
+  background-color: #004147;
+}
+
+.mycard {
+  background-color: #022F34;
+  color: #6DAEAD;
+}
+
+.mycard-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #004147;
+  font-weight: bold;
+}
+
+.mycard-btn:hover {
+  background-color: turquoise !important;
+}
+
+.mycard-btn:hover ~ .mycard-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mycard-active {
+  background-color: #022F34;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mycard-active-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #004147;
+  font-weight: normal;
+  background-color: aqua !important;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mycard-active-btn:focus button {
+  display: none;
+}
+/*# sourceMappingURL=main.min.css.map */
